@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <script>
+         function validate(){
+         let email = document.getElementById('email').value
+         let Password = document.getElementById('Password').value
+         if (email == ""){
+         //console.log("Test Case")
+         document.getElementById('emailMessage').innerHTML = 'Please enter email Id'
+        }
+         if (Password == ""){
+         document.getElementById('PasswordMessage').innerHTML = 'Please enter Password'
+        }
+        return false
+
+    }
+
+    </script>
+</head>
+<body>
+    <h2 style="text-align: center;">Login Page</h2>
+    <form>
+        <label>Username :&nbsp;&nbsp;&nbsp;&nbsp; </label>      
+        <input type="text" id = "email" placeholder="email"><br>
+        <span id="emailMessage" style="color: red;"></span><br><br><br>
+        <label>Password : &nbsp;&nbsp;&nbsp;&nbsp; </label>
+        <input type="text" id = "Password" placeholder="Password"><br>
+        <span id="PasswordMessage" style="color: red;"></span><br><br><br>
+        <button onclick="return validate()">Login</button>        
+    </form>
+    
+</body>
+</html>

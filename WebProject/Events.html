@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Model</h2>
+    Enter Your name: <input type="text" id="fname" onchange="upperCase()">
+    <p>Please enter any text to convert into uppercase</p>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+style="background-color:brown; width: 120px; height: 30px; align-content: center;"
+
+<script>
+   function upperCase(){
+    const x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+   } 
+
+   function mOver(){
+    obj.innerHTML = "Thankyou"
+   }
+   function mOut(){
+    obj.innerHTML = "Mouse over me"
+   }
+</script>
+
+</body>
+</html>
