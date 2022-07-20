@@ -1,4 +1,26 @@
 <html>
-    <head></head>
-    <body></body>
+    <head>
+     <script src="./Registration.js" type="text/javascript"></script>
+     <link rel="stylesheet" href="Registration.css">
+    </head>
+    <body>
+    <form class="Register">
+        <h1>Registration Details</h1>
+        <label>Username: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id = "username">
+        <span id="usernamemessage" style="color: red"></span><br><br><br>
+        <label>email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id = "email">
+        <span id="emailMessage" style="color: red"></span><br><br><br>
+        <label>Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id = "Password">
+        <span id="PasswordMessage" style="color: red"></span><br><br><br>
+        
+        <label>CPPassword: &nbsp;&nbsp;</label>
+        <input type="text" id = "cpassword">
+        <span id="cPasswordMessage" style="color: red"></span><br><br><br>
+        <button onclick="return validate()">Submit</button>
+    </form>
+        
+    </body>
 </html>
